@@ -27,7 +27,7 @@ int main()
     vector<string> vFileContent;
     LoadFileToVector("MyFile.txt", vFileContent);
 
-    for (string &Line : vFileContent)
+    for (string & Line : vFileContent)
     {
         cout << Line << endl;
     }

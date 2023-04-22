@@ -1,7 +1,6 @@
-/.vscode
-/main.exe
-/main.ilk
-/main.obj
-/main.pdb
-/MyFile.txt
-/vc140.pdb
+*.vscode
+*.exe
+*.ilk
+*.obj
+*.pdb
+*.pdb
