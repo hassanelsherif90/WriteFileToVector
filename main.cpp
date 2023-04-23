@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void LoadFileToVector(string Path, vector<string> &vFileContent)
+void LoadFileToVector(string Path, vector<string> & vFileContent)
 {
     fstream MyFile;
 
