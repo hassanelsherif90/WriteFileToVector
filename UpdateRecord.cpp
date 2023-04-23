@@ -58,7 +58,7 @@ void PrintFile(string Path)
     }
 }
 
-void DeletRecord(string Path, string Name)
+void UpdateRecord(string Path, string Name, string UpdateRecord)
 {
     vector<string> vFileContent;
 
@@ -68,7 +68,7 @@ void DeletRecord(string Path, string Name)
     {
         if (Name == Line)
         {
-            Line = "";
+            Line = UpdateRecord;
         }
     }
     
@@ -80,7 +80,7 @@ int main()
     cout << "Before Delet Record \n";
     PrintFile("MyFile.txt");
 
-    DeletRecord("MyFile.txt", "Ali");
+    UpdateRecord("MyFile.txt", "Ali", "Ahmed");
 
     cout << "\n\nAfter Delet Record \n";
     PrintFile("MyFile.txt");
