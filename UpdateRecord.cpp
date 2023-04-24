@@ -80,7 +80,7 @@ int main()
     cout << "Before Delet Record \n";
     PrintFile("MyFile.txt");
 
-    UpdateRecord("MyFile.txt", "Ali", "Ahmed");
+    UpdateRecord("MyFile.txt", "Ali", "Hassan");
 
     cout << "\n\nAfter Delet Record \n";
     PrintFile("MyFile.txt");
