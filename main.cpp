@@ -15,9 +15,9 @@ void SaveToFile(string Path, vector<string> &vFileContent)
         for (string &Line : vFileContent)
         {
             if (Line != "")
-                {
-                    MyFile << Line << endl;
-                }
+            {
+                MyFile << Line << endl;
+            }
         }
         MyFile.close();
     }
@@ -71,7 +71,7 @@ void DeletRecord(string Path, string Name)
             Line = "";
         }
     }
-    
+
     SaveToFile(Path, vFileContent);
 }
 
@@ -85,7 +85,9 @@ int main()
     cout << "\n\nAfter Delet Record \n";
     PrintFile("MyFile.txt");
 
-    cout << endl<<endl;
-
+    cout << endl
+         << endl;
+    int i;
+    cin >> i;
     return 0;
 }

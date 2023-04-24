@@ -15,9 +15,9 @@ void SaveToFile(string Path, vector<string> &vFileContent)
         for (string &Line : vFileContent)
         {
             if (Line != "")
-                {
-                    MyFile << Line << endl;
-                }
+            {
+                MyFile << Line << endl;
+            }
         }
         MyFile.close();
     }
@@ -71,21 +71,24 @@ void UpdateRecord(string Path, string Name, string UpdateRecord)
             Line = UpdateRecord;
         }
     }
-    
+
     SaveToFile(Path, vFileContent);
 }
 
 int main()
 {
-    cout << "Before Delet Record \n";
-    PrintFile("MyFile.txt");
+    cout << "Before Update Record \n";
+    PrintFile("/MyFile.txt");
 
-    UpdateRecord("MyFile.txt", "Ali", "Hassan");
+    UpdateRecord("/MyFile.txt", "Hassan", "Ali");
 
-    cout << "\n\nAfter Delet Record \n";
-    PrintFile("MyFile.txt");
+    cout << "\n\nAfter Update Record \n";
+    PrintFile("/MyFile.txt");
 
-    cout << endl<<endl;
-    
+    cout << endl
+         << endl;
+    int i;
+    cin >> i;
+    i;
     return 0;
 }
