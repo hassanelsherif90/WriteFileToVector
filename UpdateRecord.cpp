@@ -78,17 +78,13 @@ void UpdateRecord(string Path, string Name, string UpdateRecord)
 int main()
 {
     cout << "Before Update Record \n";
-    PrintFile("/MyFile.txt");
+    PrintFile("MyFile.txt");
 
-    UpdateRecord("/MyFile.txt", "Hassan", "Ali");
+    UpdateRecord("MyFile.txt", "Hassan", "Ali");
 
     cout << "\n\nAfter Update Record \n";
-    PrintFile("/MyFile.txt");
-
-    cout << endl
-         << endl;
+    PrintFile("MyFile.txt");
     int i;
     cin >> i;
-    i;
     return 0;
 }
