@@ -17,7 +17,6 @@ int main()
     cout << "Year Day (Days since Jan 1st) : " << Now->tm_yday << endl;
     cout << "Hour of Daylight saving time  : " << Now->tm_isdst << endl;
     cout << "Please Enter any Key To end : ";
-    int i;
-    cin >> i;
+
     return 0;
 }
